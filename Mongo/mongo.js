@@ -10,6 +10,8 @@ var userSchema=new schema({
     type:String,
     required:true
   }
+},{
+    versionKey: false // You should be aware of the outcome after set to false
 });
 
 var user =mongoose.model("customers",userSchema)
